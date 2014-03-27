@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4EBCF9" >
+	 <EditText
+        style="@style/editext_stytle"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:password="true"
+        android:singleLine="true"
+        android:layout_marginBottom="@dimen/edittex_vertical_margin"
+        android:layout_marginLeft="@dimen/edittex_horizontal_margin"
+        android:layout_marginRight="@dimen/edittex_horizontal_margin"
+        android:layout_marginTop="@dimen/edittex_vertical_margin"
+        android:drawableLeft="@drawable/login_key"
+        android:hint="密码" />
+    <EditText
+        style="@style/editext_stytle"
+        android:id="@+id/acount"
+        android:layout_above="@id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edittex_vertical_margin"
+        android:layout_marginLeft="@dimen/edittex_horizontal_margin"
+        android:layout_marginRight="@dimen/edittex_horizontal_margin"
+        android:drawableLeft="@drawable/login_user"
+        android:hint="网关" />
+    <ImageView
+        android:id="@+id/log_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+		android:scaleX="1.5"
+		android:scaleY="1.5"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/password"
+        android:src="@drawable/wuliantext" />
+    <CheckBox
+        android:id="@+id/pwd_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="@dimen/edittex_horizontal_margin"
+        android:text="记住密码" />
+
+    <CheckBox
+        android:layout_below="@id/password"
+        android:id="@+id/auto_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/edittex_horizontal_margin"
+        android:text="自动登录" />
+    <Button
+        android:padding="10dip" 
+        android:id="@+id/log_bt"
+        android:background="@drawable/log_bt"
+        android:layout_marginLeft="@dimen/edittex_horizontal_margin"
+        android:layout_marginRight="@dimen/edittex_horizontal_margin"
+        android:layout_below="@id/auto_cb"
+        android:layout_width="match_parent"
+        android:text="登\t\t\t\t\t\t录"
+        android:layout_height="wrap_content"/>
+    <Button 
+        android:id="@+id/bt_about"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:padding="10dip"
+        android:background="@drawable/startup_learn_more_bg"
+        android:text="了解更多"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

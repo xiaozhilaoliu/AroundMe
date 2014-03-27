@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wlcg.aroundme.cc.SplashActivity" >
+
+    <item
+        android:id="@+id/app_exit"
+        android:orderInCategory="200"
+        android:showAsAction="never"
+        android:title="@string/app_exit"/>
+    <item 
+        android:id="@+id/change_acount"
+        android:orderInCategory="200"
+        android:showAsAction="never"
+        android:title="更换用户"
+        />
+
+</menu>

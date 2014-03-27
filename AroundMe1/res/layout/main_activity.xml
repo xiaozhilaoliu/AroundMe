@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5C271">
+      <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/main_below"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/main_button_bg"
+            android:text="@string/main_wether" />
+
+        <Button
+            android:id="@+id/air"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/main_button_bg"
+            android:text="@string/main_air"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_above"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/main_below"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_margin="10dip"
+            android:background="@drawable/main_button_bg"
+            android:text="@string/main_humidity" />
+
+        <Button
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_margin="10dip"
+            android:background="@drawable/main_button_bg"
+            android:text="@string/main_temp" />
+    </LinearLayout>
+    
+      <FrameLayout 
+        android:id="@+id/play_wave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_above="@id/main_above">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </FrameLayout>
+</RelativeLayout>

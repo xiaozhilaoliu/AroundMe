@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="lib" path="E:/company source/developer/locSDK4.1/locSDK_V4.1/locSDK_4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/company source/others/achartengine-1.1.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/E:/company source/others/achartengine-1.1.0-javadocs/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="E:/company source/developer/wl_sdk_wan_sample_android/libs/WL_SDK_WAN_ANDROID.jar"/>
+	<classpathentry kind="lib" path="E:/company source/developer/wl_sdk_wan_sample_android/libs/android-support-v4.jar" sourcepath="D:/android-sdk_r21.0.1-windows/android-sdk-windows/extras/android/support/v4/src"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>
